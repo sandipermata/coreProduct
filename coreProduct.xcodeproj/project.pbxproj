@@ -10,6 +10,8 @@
 		F0562E67238FD10B005B0B93 /* coreProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0562E5D238FD10A005B0B93 /* coreProduct.framework */; };
 		F0562E6C238FD10B005B0B93 /* coreProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0562E6B238FD10B005B0B93 /* coreProductTests.swift */; };
 		F0562E6E238FD10B005B0B93 /* coreProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = F0562E60238FD10A005B0B93 /* coreProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0562E78238FD126005B0B93 /* product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0562E77238FD126005B0B93 /* product.swift */; };
+		F0562E7A238FD136005B0B93 /* productService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0562E79238FD136005B0B93 /* productService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		F0562E66238FD10B005B0B93 /* coreProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0562E6B238FD10B005B0B93 /* coreProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreProductTests.swift; sourceTree = "<group>"; };
 		F0562E6D238FD10B005B0B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0562E77238FD126005B0B93 /* product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = product.swift; sourceTree = "<group>"; };
+		F0562E79238FD136005B0B93 /* productService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				F0562E60238FD10A005B0B93 /* coreProduct.h */,
 				F0562E61238FD10A005B0B93 /* Info.plist */,
+				F0562E77238FD126005B0B93 /* product.swift */,
+				F0562E79238FD136005B0B93 /* productService.swift */,
 			);
 			path = coreProduct;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					F0562E5C238FD10A005B0B93 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					F0562E65238FD10B005B0B93 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0562E78238FD126005B0B93 /* product.swift in Sources */,
+				F0562E7A238FD136005B0B93 /* productService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		F0562E72238FD10B005B0B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PP3V63WTK6;
@@ -348,6 +358,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = coreProduct/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.everest.coreProduct;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +376,7 @@
 		F0562E73238FD10B005B0B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PP3V63WTK6;
@@ -372,6 +385,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = coreProduct/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +402,7 @@
 		F0562E75238FD10B005B0B93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PP3V63WTK6;
 				INFOPLIST_FILE = coreProductTests/Info.plist;
@@ -406,6 +421,7 @@
 		F0562E76238FD10B005B0B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PP3V63WTK6;
 				INFOPLIST_FILE = coreProductTests/Info.plist;
